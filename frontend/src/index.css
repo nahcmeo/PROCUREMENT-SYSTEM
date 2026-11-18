@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --procurement-primitives-indigo-600: rgba(79, 70, 229, 1);
+  --procurement-primitives-indigo-700: rgba(67, 56, 202, 1);
+  --procurement-primitives-indigo-50: rgba(238, 242, 255, 1);
+  --procurement-primitives-slate-50: rgba(248, 250, 252, 1);
+  --procurement-primitives-slate-100: rgba(241, 245, 249, 1);
+  --procurement-primitives-slate-200: rgba(226, 232, 240, 1);
+  --procurement-primitives-slate-400: rgba(148, 163, 184, 1);
+  --procurement-primitives-slate-600: rgba(71, 85, 105, 1);
+  --procurement-primitives-slate-900: rgba(15, 23, 42, 1);
+  
+  --procurement-primitives-green-50: rgba(240, 253, 244, 1);
+  --procurement-primitives-green-700: rgba(21, 128, 61, 1);
+  --procurement-primitives-amber-50: rgba(255, 251, 235, 1);
+  --procurement-primitives-amber-700: rgba(180, 83, 9, 1);
+  --procurement-primitives-blue-50: rgba(239, 246, 255, 1);
+  --procurement-primitives-blue-700: rgba(29, 78, 216, 1);
+  --procurement-primitives-red-50: rgba(254, 242, 242, 1);
+  --procurement-primitives-red-700: rgba(185, 28, 28, 1);
+
+  --procurement-semantic-action-primary: var(--procurement-primitives-indigo-600);
+  --procurement-semantic-action-primary-hover: var(--procurement-primitives-indigo-700);
+  --procurement-semantic-background-canvas: var(--procurement-primitives-slate-50);
+  --procurement-semantic-border-default: var(--procurement-primitives-slate-200);
+  --procurement-semantic-focus-ring: var(--procurement-primitives-indigo-600);
+  --procurement-semantic-navigation-selected-background: var(--procurement-primitives-indigo-50);
+  --procurement-semantic-surface-default: #ffffff;
+  --procurement-semantic-surface-subtle: var(--procurement-primitives-slate-100);
+  --procurement-semantic-text-brand: var(--procurement-primitives-indigo-600);
+  --procurement-semantic-text-primary: var(--procurement-primitives-slate-900);
+  --procurement-semantic-text-secondary: var(--procurement-primitives-slate-600);
+
+  --procurement-semantic-status-approved-background: var(--procurement-primitives-green-50);
+  --procurement-semantic-status-approved-text: var(--procurement-primitives-green-700);
+  --procurement-semantic-status-pending-background: var(--procurement-primitives-amber-50);
+  --procurement-semantic-status-pending-text: var(--procurement-primitives-amber-700);
+  --procurement-semantic-status-processing-background: var(--procurement-primitives-blue-50);
+  --procurement-semantic-status-processing-text: var(--procurement-primitives-blue-700);
+  --procurement-semantic-status-rejected-background: var(--procurement-primitives-red-50);
+  --procurement-semantic-status-rejected-text: var(--procurement-primitives-red-700);
+}
+
+/* ÁP DỤNG TRIỆT ĐỂ FONT 'Be Vietnam Pro' CHO TOÀN BỘ PHẦN TỬ TRÊN TRANG */
+html,
+body,
+#root,
+button,
+input,
+select,
+textarea,
+span,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+th,
+td {
+  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--procurement-semantic-background-canvas);
+  color: var(--procurement-semantic-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
